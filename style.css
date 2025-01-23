@@ -1,0 +1,127 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ecbdbd;
+}
+
+
+.Calculadora {
+    background: rgba(182, 239, 244, 0.9);
+    width: 380px; 
+    padding: 30px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título */
+.Calculadora h1 {
+    margin: 0 0 20px;
+    font-size: 26px;
+    color: #ea4412;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+input[type="number"], button, select {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+button {
+    background-color: #f7bfe9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #9dd6ee;
+}
+
+
+#result {
+    margin-top: 15px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #333;
+    background: #f9f9f9;
+    border: 1px solid #cd0957;
+    border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        height: auto; 
+        justify-content: flex-start; 
+    }
+
+    .Calculadora {
+        width: 95%; 
+        max-width: 420px; 
+        padding: 25px; 
+        margin-top: 20px; 
+    }
+
+    .Calculadora h1 {
+        font-size: 24px; 
+    }
+
+    input[type="number"], button, select {
+        font-size: 14px; 
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        justify-content: flex-start; 
+    }
+
+    .Calculadora {
+        width: 90%; 
+        padding: 20px; 
+        margin-top: 30px; 
+    }
+
+    .Calculadora h1 {
+        font-size: 20px;
+    }
+
+    input[type="number"], button, select {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #result {
+        font-size: 12px;
+    }
+}
